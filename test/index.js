@@ -2,6 +2,12 @@ import * as assert from 'assert';
 import maskUSPhone from '../src/index';
 
 const testSamples = [
+  { input: null, expectedResult: null, description: 'should return null when null is passed' },
+  {
+    input: undefined,
+    expectedResult: null,
+    description: 'should return null when undefined is passed',
+  },
   {
     input: 'abc',
     expectedResult: 'abc',
