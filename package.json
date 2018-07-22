@@ -2,7 +2,7 @@
 	"name": "masking-js",
 	"version": "0.0.4",
 	"description": "A NPM package that exports functions to mask values.",
-	"main": "./lib/index.js",
+	"main": "lib/index.js",
 	"scripts": {
 		"build": "npm run lint && babel ./src -d ./lib",
 		"lint": "eslint ./src",
@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kyunwang/masks-js.git"
+		"url": "git+https://github.com/kyunwang/masking-js.git"
 	},
 	"keywords": [
 		"npm",
@@ -21,9 +21,9 @@
 	"author": "Kang Yun Wang",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/kyunwang/masks-js/issues"
+		"url": "https://github.com/kyunwang/masking-js/issues"
 	},
-	"homepage": "https://github.com/kyunwang/masks-js#readme",
+	"homepage": "https://github.com/kyunwang/masking-js#readme",
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
