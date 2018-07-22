@@ -1,6 +1,6 @@
 {
 	"name": "masking-js",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A NPM package that exports functions to mask values.",
 	"main": "lib/index.js",
 	"scripts": {
