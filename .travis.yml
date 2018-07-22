@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+- '6'
+before_deploy:
+- npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: kevinwang8011@hotmail.com
+  api_key:
+    secure: rSqcZskllYayfM7GI5WVhN7XzntJR0NUxg/KGG09BPo0S+I/J7Xv5iMenuwQaIMHtSHMFagQSGp6BP3fzHdNjSfHnikdkO1Muz8p3gxKU4HpcLdoYPaPE2eMEmqpdRqpzEczUHXk5LWf1w7KcpJjLGAz0cRmtnEjOu1sej3mxobQt+H8Q62ncPkmK4sbc7pHczMwMepN64AeBujX9AKXJVtVy7/sgNe/hczNZNhAXhNBnH1aFyIuqEdoRbjkBl7N3azDKt0uTtpQqT/XahyM/66uvTVf6yGspow8BuZC3NmZ7e8CbC6QZOgfHgRupcCcPd71ZASy+fe42LaFdu78Aj70oWEtip3max3zXZ7jgiWnC3yv1qU7PPcwjqz83srPXs0oxJnmcED+MGnd5INpTN9ia0p/PlIp9OaOjix5LHm0TZaqo2DwuYIm9m3Rux8pnzBHSe0Tr8nTq7BLLSQkDogXVGkS/grjVKMPCyIldWx3vBG+xHz+sJn6kfUOzwNKtl7QPd/VI/zVB47/eZcdssPfwl2S11zCmDkQImc8hkdBzhg8YpEmtTpQsz3mbyIs3lnKu3ZalOTLB+t5nz7cNCMwiGRvB1SaQJKxIFxldyzDYon7WSIWNxYQ8SPoarnfzbFg2cLFwo2oWf3zGXa0taGqafUFt5u+gcZ2tqg10Js=
+  on:
+    tags: true
+    repo: kyunwang/masking-js
